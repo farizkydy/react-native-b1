@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function ExploreScreen() {
+export default function ProfileScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>🧭 Explore Screen</Text>
+      <Text style={styles.title}>👤 Profile via Drawer</Text>
     </View>
   );
 }
