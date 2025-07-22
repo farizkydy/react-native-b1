@@ -1,10 +1,10 @@
-import { Drawer } from 'expo-router/drawer';
+import { NotesProvider } from "@/context/NotesContext";
+import { Slot } from "expo-router";
 
 export default function RootLayout() {
   return (
-    <Drawer>
-      <Drawer.Screen name="(tabs)" options={{ title: 'Main' }} />
-      <Drawer.Screen name="(drawer)/profile" options={{ title: 'Profile' }} />
-    </Drawer>
-  );
+    <NotesProvider>
+      <Slot />
+    </NotesProvider>
+  )
 }
