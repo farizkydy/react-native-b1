@@ -5,11 +5,11 @@ interface RouteParams {
 }
 
 export default function DetailScreen({ route }: { route: { params: RouteParams } }) {
-  const name = route?.params?.name || '';
+  // const name = route?.params?.name || '';
   return (
     <View style={styles.container}>
       <Text style={styles.title}>📄 Detail Screen (via Stack)</Text>
-      <Text>{name}</Text>
+      {/* <Text>{name}</Text> */}
     </View>
   );
 }

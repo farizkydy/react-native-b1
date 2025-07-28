@@ -1,12 +1,11 @@
-import { useNotes } from '@/context/NotesContext';
-import { Button, FlatList, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function ExploreScreen() {
-  const { notes } = useNotes();
+  // const { notes } = useNotes();
   return (
     <View style={styles.container}>
       <Text style={styles.title}>🧭 Semua Catatan</Text>
-      {notes.length === 0 ? (
+      {/* {notes.length === 0 ? (
         <Text>Tidak ada catatan.</Text>
       ) : (
         <FlatList 
@@ -19,7 +18,7 @@ export default function ExploreScreen() {
             </View>
           )}
         />
-      )}
+      )} */}
     </View>
   );
 }

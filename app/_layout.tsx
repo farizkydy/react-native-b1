@@ -1,10 +1,10 @@
-import { NotesProvider } from "@/context/NotesContext";
+import { JobProvider } from "@/context/JobContext";
 import { Slot } from "expo-router";
 
 export default function RootLayout() {
   return (
-    <NotesProvider>
+    <JobProvider>
       <Slot />
-    </NotesProvider>
+    </JobProvider>
   )
 }
