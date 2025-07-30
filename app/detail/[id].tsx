@@ -26,7 +26,7 @@ export default function JobDetailPage() {
   return (
     <SafeAreaView style={styles.container}>
       <Button title="← Back" onPress={() => navigation.goBack()} />
-      <Text style={styles.title}>{job.jobName}ss</Text>
+      <Text style={styles.title}>{job.jobName}</Text>
       <Text>Company: {job.company}</Text>
       <Text>Location: {job.location}</Text>
       <Text>Created At: {new Date(job.createdAt).toLocaleString()}</Text>
