@@ -30,6 +30,7 @@ export default function TabLayout() {
             <Ionicons name="compass" size={size} color={color} />
           ),
         }}
+        
       />
     </Tabs>
   );

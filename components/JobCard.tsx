@@ -1,28 +1,23 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { Job } from '../types/job';
+// components/JobCard.tsx
+import { Job } from '@/types/job';
+import { Pressable, StyleSheet, Text } from 'react-native';
 
-type Props = {
-  job: Job;
+export const JobCard = ({ job, onPress }: { job: Job; onPress: () => void }) => {
+  return (
+    <Pressable onPress={onPress} style={styles.card}>
+      <Text style={styles.title}>{job.jobName}</Text>
+      <Text>{job.company}</Text>
+    </Pressable>
+  );
 };
-
-export const JobCard: React.FC<Props> = ({ job }) => (
-  <View style={styles.card}>
-    <Text style={styles.title}>{job.jobName}</Text>
-    <Text>{job.company}</Text>
-    <Text>{job.location}</Text>
-  </View>
-);
 
 const styles = StyleSheet.create({
   card: {
     padding: 16,
-    marginVertical: 8,
+    marginBottom: 12,
+    backgroundColor: '#fff',
     borderRadius: 8,
-    backgroundColor: '#f2f2f2',
+    elevation: 2,
   },
-  title: {
-    fontWeight: 'bold',
-    fontSize: 16,
-  },
+  title: { fontWeight: 'bold', fontSize: 16 },
 });
